@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YourName | 2D Animation Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
     <style>
         
@@ -610,7 +610,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <!-- <section id="contact" class="contact-section">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             
@@ -618,7 +618,7 @@
                 <form id="contactForm" action="https://formspree.io/f/xwpbobgq" method="POST">
     <!-- Add these hidden fields -->
      <!-- Add this to force Gmail delivery -->
-<input type="hidden" name="_redirect" value="https://formspree.io/thanks">
+<!-- <input type="hidden" name="_redirect" value="https://formspree.io/thanks">
     <input type="hidden" name="_replyto" value="actuallawal@gmail.com">
     <input type="hidden" name="_subject" value="New message from your portfolio!">
     
@@ -637,30 +637,33 @@
     <button type="submit" class="btn">Send Message</button>
 </form>
             </div>
-        </div>
-    </section>
+        </div> -->
+    <!-- </section> -->
 
     <!-- Footer -->
-<footer>
+<footer id="contact">
     <div class="container">
-        <div class="social-links">
-            <a href="https://www.youtube.com/@ActualLawal" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-youtube"></i>
-            </a>
-            <a href="https://www.instagram.com/actuallawal" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="actuallawal@gmail.com" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-gmail"></i>
-            </a>
-            <a href="https://twitter.com/actuallawal" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.tiktok.com/@actuallawal" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-tiktok"></i>
-            </a>
-        </div>
-        <p>&copy; 2023 Actual Lawal. All rights reserved.</p>
+  <div class="social-links">
+    <a href="https://www.youtube.com/@ActualLawal" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://www.instagram.com/actuallawal" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=actuallawal@gmail.com" target="_blank" rel="noopener noreferrer">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://twitter.com/actuallawal" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.tiktok.com/@actuallawal" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-tiktok"></i>
+    </a>
+  </div>
+</div>
+
+
+        <p>&copy; 2025 Actual Lawal. All rights reserved.</p>
     </div>
 </footer>
 
@@ -744,23 +747,23 @@
         });
         
         // Form Submission
-        const contactForm = document.getElementById('contactForm');
+        // const contactForm = document.getElementById('contactForm');
         
-        contactForm.addEventListener('submit', function(e) {
-            // e.preventDefault();
+        // contactForm.addEventListener('submit', function(e) {
+        //     // e.preventDefault();
             
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
+        //     // Get form values
+        //     const name = document.getElementById('name').value;
+        //     const email = document.getElementById('email').value;
+        //     const message = document.getElementById('message').value;
             
-            // Here you would typically send the form data to a server
-            // For now, we'll just show an alert
-            alert(`Thanks for your message, ${name}! I'll get back to you soon at ${email}.`);
+        //     // Here you would typically send the form data to a server
+        //     // For now, we'll just show an alert
+        //     alert(`Thanks for your message, ${name}! I'll get back to you soon at ${email}.`);
             
-            // Reset the form
-            contactForm.reset();
-        });
+        //     // Reset the form
+        //     contactForm.reset();
+        // });
     </script>
 </body>
 </html>
