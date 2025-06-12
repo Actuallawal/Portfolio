@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        
         :root {
             --primary: #FF6B6B;
             --secondary: #4ECDC4;
@@ -501,47 +502,27 @@
                     </div>
                 </div>
 
-                <!-- Project 4 - TikTok Version -->
-<div class="video-card" data-category="commercial">
-    <div class="video-container">
-        <!-- TikTok Embed Block -->
-        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@actuallawal/video/7485052887135964471" 
-            data-video-id="7485052887135964471" 
-            style="max-width: 605px;min-width: 325px;">
-            <section>
-                <a target="_blank" title="@actuallawal" href="https://www.tiktok.com/@actuallawal">@actuallawal</a>
-                <p>Your video description here</p>
-                <a target="_blank" title="♬ original sound - Actual Lawal" href="https://www.tiktok.com/music/original-sound-Actual-Lawal-123456">♬ original sound - Actual Lawal</a>
-            </section>
-        </blockquote>
-        <script async src="https://www.tiktok.com/embed.js"></script>
-    </div>
-    <div class="video-info">
-        <h3>Drive with Machtrip</h3>
-        <p>Commercial | 2025</p>
-    </div>
-</div>
-
-<!-- Project 5 - TikTok Version -->
-<div class="video-card" data-category="commercial">
-    <div class="video-container">
-        <!-- TikTok Embed Block -->
-        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@actuallawal/video/7426310558988782853?is_from_webapp=1&sender_device=pc&web_id=7514864972539774469" 
-            data-video-id="7514864972539774469" 
-            style="max-width: 605px;min-width: 325px;">
-            <section>
-                <a target="_blank" title="@actuallawal" href="https://www.tiktok.com/@actuallawal">@actuallawal</a>
-                <p>No sleep on this update o, no allow your guy use your head o 😂 Use CLEVA.</p>
-                <a target="_blank" title="♬ original sound - Actual Lawal" href="https://www.tiktok.com/music/original-sound-Actual-Lawal-123456">♬ original sound - Actual Lawal</a>
-            </section>
-        </blockquote>
-        <script async src="https://www.tiktok.com/embed.js"></script>
-    </div>
-    <div class="video-info">
-        <h3>International Transactions with Cleva</h3>
-        <p>Commercial | 2024</p>
-    </div>
-</div>
+                <!-- Project 4 -->
+                <div class="video-card" data-category="commercial">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/m5fg28OYMRE?si=ZRmyed-d7w-1tGGH" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>When they said you look quiet in person</h3>
+                        <p>Character Animation | 2024</p>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="video-card" data-category="commercial">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/v62gX_Bs0mo?si=QyAd0J3QnhPEAkE4" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>The Kidnap - EPISODE 2: Escape</h3>
+                        <p>Character Animation | 2025</p>
+                    </div>
+                </div>
 
                 <!-- Project 6 -->
                 <div class="video-card" data-category="personal">
@@ -634,7 +615,13 @@
             <h2 class="section-title">Get In Touch</h2>
             
             <div class="contact-form">
-                <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <form id="contactForm" action="https://formspree.io/f/xwpbobgq" method="POST">
+    <!-- Add these hidden fields -->
+     <!-- Add this to force Gmail delivery -->
+<input type="hidden" name="_redirect" value="https://formspree.io/thanks">
+    <input type="hidden" name="_replyto" value="actuallawal@gmail.com">
+    <input type="hidden" name="_subject" value="New message from your portfolio!">
+    
     <div class="form-group">
         <label for="name">Your Name</label>
         <input type="text" id="name" name="name" required>
@@ -663,8 +650,8 @@
             <a href="https://www.instagram.com/actuallawal" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin"></i>
+            <a href="actuallawal@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-gmail"></i>
             </a>
             <a href="https://twitter.com/actuallawal" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-twitter"></i>
@@ -760,7 +747,7 @@
         const contactForm = document.getElementById('contactForm');
         
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+            // e.preventDefault();
             
             // Get form values
             const name = document.getElementById('name').value;
